@@ -9,10 +9,15 @@
       week: 'numeric',
       month: 'long',
       year: 'numeric',
-      weekday: 'nymeric',
+      weekday: "nymeric",
+
+
     }
 
-    const now = new Date()
+
+    
+
+    let now = new Date()
     const formattedDate = now.toLocaleDateString('en-US', options)
     return `Hello, ${name}! Today is ${formattedDate}.`
   }
