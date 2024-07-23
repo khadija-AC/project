@@ -36,8 +36,7 @@ jobs:
         with:
           eslint: true
           prettier: true
-          auto-fix: true
-
+          auto_fix: true
     
       - name: Verification(cat index.js)
         run: cat index.js
