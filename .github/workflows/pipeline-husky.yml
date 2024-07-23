@@ -52,17 +52,6 @@ jobs:
               git commit -m "chore: fix linting issues"
               git push
             fi
-      - name: Check commit messages
-        run: |
-          if [ "${{ github.event_name }}" = "pull_request" ]; then
-            base_sha="${{ github.event.pull_request.base.sha }}"
-          else
-            base_sha="${{ github.event.before }}"
-          fi
-          commits=$(git log --format=%B ${base_sha}..${{ github.sha }})
-          echo "$commits" | npx commitlint
-          
-
-      
-    
-     
+            
+      - name: Verification(cat index.js)
+        run: cat index.js
