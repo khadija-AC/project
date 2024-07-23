@@ -40,7 +40,7 @@ jobs:
           prettier: true
 
       - name: Fix lint issues
-        run: npx eslint . --fix
+        run: npx eslint '**.js' --fix
         
       - name: Commit changes if any
         run: |
@@ -48,7 +48,7 @@ jobs:
           git config --global user.name "khadija-AC"
           if [ -n "$(git status --porcelain)" ]; then
             git add .
-            git commit -m "chore: fix linting issues"
+            git commit -m "fix: fix linting issues"
             git push 
           fi
 
