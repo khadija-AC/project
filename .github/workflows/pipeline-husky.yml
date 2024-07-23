@@ -29,7 +29,8 @@ jobs:
            git config --global user.email "khadijaaws21@gmail.com"
            git config --global user.name "khadija-AC"
 
-     
+      - name: modif index.js
+        run: echo 'khadija' > index.js
 
       - name: test 
         run: |
