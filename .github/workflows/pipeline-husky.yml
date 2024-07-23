@@ -29,17 +29,19 @@ jobs:
            git config --global user.email "khadijaaws21@gmail.com"
            git config --global user.name "khadija-AC"
 
-      - name: commit
-        uses: webiny/action-conventional-commits@v1.3.0
-        with:
-         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Optional, for private repositories.
-         allowed-commit-types: "feat,fix" # Optional, set if you want a subset of commit types to be allowed.
-        
+     
 
       - name: test 
         run: |
           git add .
           git commit -m " hello" 
+
+      - name: commit
+        uses: webiny/action-conventional-commits@v1.3.0
+        with:
+           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Optional, for private repositories.
+           allowed-commit-types: "feat,fix" # Optional, set if you want a subset of commit types to be allowed.
+          
 
       
     
