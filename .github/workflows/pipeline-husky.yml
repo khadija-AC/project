@@ -3,7 +3,11 @@ name: Lint and format
 on: [push, pull_request]
 
 jobs:
+
   run-linters:
+    permissions:
+      contents: write
+
     name: Run linters
     runs-on: ubuntu-latest
 
@@ -19,11 +23,6 @@ jobs:
       - name: Install Node.js dependencies
         run: npm install
 
-      - name: Permission
-        run: |
-         chmod +x .husky/pre-commit
-         chmod +x .husky/commit-msg
-         chmod +x .husky/prepare-commit-msg
 
       - name: identification
         run: |
