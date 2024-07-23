@@ -1,7 +1,3 @@
 {
-    "extends": ["@commitlint/config-conventional"],
-    "rules": {
-      "type-empty": "off",
-      "subject-empty": "off"
-    }
+    "extends": ["@commitlint/config-conventional"]
   }
