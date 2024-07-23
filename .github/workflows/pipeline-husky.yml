@@ -39,8 +39,8 @@ jobs:
           eslint: true
           prettier: true
 
-      - name: Fix lint issues
-        run: npx eslint . --fix
+      #- name: Fix lint issues
+       # run: npx eslint . --fix
         
       - name: Commit changes if any
         run: |
