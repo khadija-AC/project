@@ -4,6 +4,10 @@
 
 
 
+
+
+      
+
       second: 'numeric',
       minute: 'numeric',
       hour: 'numeric',
@@ -11,18 +15,10 @@
       week: "numeric",
       month: 'long',
       year: 'numeric',
-      
-
-
-      
-
-
-
-
-
+      weekday: 'nymeric',
     }
 
-    let now = new Date();
+    const now = new Date();
     const formattedDate = now.toLocaleDateString('en-US', options);
     return `Hello, ${name}! Today is ${formattedDate}.`
   }
