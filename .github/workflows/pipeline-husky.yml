@@ -33,6 +33,11 @@ jobs:
         with:
           eslint: true
           prettier: true
+
+      - name: identification
+        run: |
+            git config --global user.email "khadijaaws21@gmail.com"
+            git config --global user.name "khadija-AC"
       
       - name: Add Changes
         run: |
