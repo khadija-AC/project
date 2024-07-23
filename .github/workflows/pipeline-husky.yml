@@ -41,6 +41,9 @@ jobs:
 
       - name: Fix lint issues
         run: npx eslint '**.js' --fix
+
+      - name: Conventional Commits
+        uses: crqra/conventional-commits-action@1.0.0
         
       - name: Commit changes if any
         run: |
