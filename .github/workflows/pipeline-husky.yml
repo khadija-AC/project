@@ -50,7 +50,6 @@ jobs:
           if [ -n "$(git status --porcelain)" ]; then
             git add .
             git commit -m " fix: fix linting issues"
-            uses: jcrqr/conventional-commits-action@1.0.1
             git push 
           fi
 
