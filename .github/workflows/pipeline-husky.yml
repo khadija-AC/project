@@ -43,18 +43,20 @@ jobs:
         run: npx eslint '**.js' --fix
         
       - name: Commit changes if any
+        env:
+          type: fix
+          description: fix linting issues
         run: |
           git config --global user.email "khadijaaws21@gmail.com"
           git config --global user.name "khadija-AC"
           if [ -n "$(git status --porcelain)" ]; then
             git add .
-            git commit -m "fix: fix linting issues"
+            git commit -m " $type: $description"
             uses: jcrqr/conventional-commits-action@1.0.1
             git push 
           fi
 
-      - name: Conventional Commits Validator
-        uses: jcrqr/conventional-commits-action@1.0.1
+      
 
       #- name: Verify Conventional Commits
         #uses: webiny/action-conventional-commits@v1.3.0
