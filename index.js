@@ -11,7 +11,7 @@
       week: "numeric",
       month: 'long',
       year: 'numeric',
-      weekday: "numeric",
+      
 
 
       
