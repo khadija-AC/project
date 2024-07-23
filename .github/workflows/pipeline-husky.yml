@@ -23,6 +23,11 @@ jobs:
       - name: Install Node.js dependencies
         run: npm install
 
+      - name: Permission
+        run: | 
+          chmod +x .husky/pre-commit
+          chmod +x .husky/prepare-commit-msg
+          chmod +x .husky/commit-msg
 
       - name: identification
         run: |
