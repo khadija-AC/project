@@ -53,13 +53,6 @@ jobs:
             git push 
           fi
 
-      
-
-      #- name: Verify Conventional Commits
-        #uses: webiny/action-conventional-commits@v1.3.0
-       # with:
-         # GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-         # allowed-commit-types: "feat,fix,chore" # Adjust this according to your commit types
-
+    
       - name: Verification (cat index.js)
         run: cat index.js
