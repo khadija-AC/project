@@ -3,7 +3,6 @@ name: Lint and format
 on: [push, pull_request]
 
 jobs:
-
   run-linters:
     permissions:
       contents: write
@@ -16,7 +15,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Set up Node.js
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v3
         with:
           node-version: 20
 
@@ -29,29 +28,35 @@ jobs:
           chmod +x .husky/prepare-commit-msg
           chmod +x .husky/commit-msg
 
-      - name: identification
+      - name: Identification
         run: |
-           git config --global user.email "khadijaaws21@gmail.com"
-           git config --global user.name "khadija-AC"
+          git config --global user.email "khadijaaws21@gmail.com"
+          git config --global user.name "khadija-AC"
 
       - name: Run linters
         uses: wearerequired/lint-action@v2
         with:
-         eslint: true
-         prettier: true
+          eslint: true
+          prettier: true
 
-      - name: fix lint
+      - name: Fix lint issues
         run: npx eslint . --fix
         
       - name: Commit changes if any
         run: |
-            git config --global user.email "khadijaaws21@gmail.com"
-            git config --global user.name "khadija-AC"
-            if [ -n "$(git status --porcelain)" ]; then
-              git add .
-              git commit -m "chore: fix linting issues"
-              git push
-            fi
+          git config --global user.email "khadijaaws21@gmail.com"
+          git config --global user.name "khadija-AC"
+          if [ -n "$(git status --porcelain)" ]; then
+            git add .
+            git commit -m "chore: fix linting issues"
+            git push
+          fi
 
-      - name: Verification(cat index.js)
+      - name: Verify Conventional Commits
+        uses: webiny/action-conventional-commits@v1.3.0
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          allowed-commit-types: "feat,fix,chore" # Adjust this according to your commit types
+
+      - name: Verification (cat index.js)
         run: cat index.js
