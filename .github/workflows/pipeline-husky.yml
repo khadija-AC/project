@@ -35,7 +35,7 @@ jobs:
       - name: test 
         run: |
           git add .
-          git commit -m " hello" 
+          git commit -m " feat: update index.js" 
 
       - name: commit
         uses: webiny/action-conventional-commits@v1.3.0
