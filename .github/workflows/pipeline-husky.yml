@@ -33,3 +33,6 @@ jobs:
         with:
           eslint: true
           prettier: true
+      
+      - name: Verification
+        run: cat index.js
