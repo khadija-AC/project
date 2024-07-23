@@ -41,9 +41,6 @@ jobs:
 
       - name: Fix lint issues
         run: npx eslint '**.js' --fix
-
-      - name: Conventional Commits Validator
-        uses: jcrqr/conventional-commits-action@1.0.1
         
       - name: Commit changes if any
         run: |
@@ -55,11 +52,14 @@ jobs:
             git push 
           fi
 
-      - name: Verify Conventional Commits
-        uses: webiny/action-conventional-commits@v1.3.0
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          allowed-commit-types: "feat,fix,chore" # Adjust this according to your commit types
+      - name: Conventional Commits Validator
+        uses: jcrqr/conventional-commits-action@1.0.1
+
+      #- name: Verify Conventional Commits
+        #uses: webiny/action-conventional-commits@v1.3.0
+       # with:
+         # GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+         # allowed-commit-types: "feat,fix,chore" # Adjust this according to your commit types
 
       - name: Verification (cat index.js)
         run: cat index.js
