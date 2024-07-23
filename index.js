@@ -1,10 +1,6 @@
 ;(function (exports) {
   function greet(name) {
     const options = {
-
-
-
-      
       microseconds: 'numeric',
       second: 'numeric',
       minute: 'numeric',
@@ -13,7 +9,7 @@
       week: 'numeric',
       month: 'long',
       year: 'numeric',
-      weekday: "nymeric",
+      weekday: 'nymeric',
     }
 
     const now = new Date()
