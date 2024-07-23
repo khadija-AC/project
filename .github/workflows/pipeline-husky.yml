@@ -48,6 +48,8 @@ jobs:
           git config --global user.name "khadija-AC"
           if [ -n "$(git status --porcelain)" ]; then
             git add .
+            git commit -m "chore: fix linting issues"
+            git push 
           fi
 
       - name: Verify Conventional Commits
@@ -55,11 +57,6 @@ jobs:
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           allowed-commit-types: "feat,fix,chore" # Adjust this according to your commit types
-
-      - name: commit et push
-        run: |
-           git commit -m "chore: fix linting issues"
-           git push 
 
       - name: Verification (cat index.js)
         run: cat index.js
