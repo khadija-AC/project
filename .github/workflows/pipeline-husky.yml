@@ -40,9 +40,6 @@ jobs:
          eslint: true
          prettier: true
 
-      - name: Run ESLint with fix
-        run: npx eslint . --ext .js,.jsx,.ts,.tsx --fix
-
       - name: Commit changes if any
         run: |
             git config --global user.email "khadijaaws21@gmail.com"
@@ -52,6 +49,6 @@ jobs:
               git commit -m "chore: fix linting issues"
               git push
             fi
-            
+
       - name: Verification(cat index.js)
         run: cat index.js
