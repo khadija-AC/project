@@ -33,7 +33,12 @@ jobs:
         with:
           eslint: true
           prettier: true
-          
       
-      - name: Verification
+      - name: Add Changes
+        run: |
+         git add .
+         git commit -m "feat: add test for husky integration"
+    
+      - name: Verification(cat index.js)
         run: cat index.js
+      
