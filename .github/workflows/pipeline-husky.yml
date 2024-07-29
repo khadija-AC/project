@@ -4,56 +4,28 @@ on: [push, pull_request]
 
 
 jobs:
-  run-linters:
-    permissions:
-      contents: write
-
-    name: Run linters
+  Validate:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Check out Git repository
-        uses: actions/checkout@v3
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
+      - name: Validate PR title
+        uses: lab42/conventional-commit@main
         with:
-          node-version: 20
-
-      - name: Install Node.js dependencies
-        run: npm install
-
-      - name: Permission
-        run: | 
-          chmod +x .husky/pre-commit
-          chmod +x .husky/prepare-commit-msg
-          chmod +x .husky/commit-msg
-
-      - name: Identification
-        run: |
-          git config --global user.email "khadijaaws21@gmail.com"
-          git config --global user.name "khadija-AC"
-
-      - name: Run linters
-        uses: wearerequired/lint-action@v2
-        with:
-          eslint: true
-          prettier: true
-
-      - name: Fix lint issues
-        run: npx eslint '**.js' --fix
-        
-      - name: Commit changes if any
-        run: |
-          git config --global user.email "khadijaaws21@gmail.com"
-          git config --global user.name "khadija-AC"
-          if [ -n "$(git status --porcelain)" ]; then
-            git add .
-            git commit -m "fix: resolve issue with data fetching"
-            git push 
-          fi
-
-      
-
-      - name: Verification (cat index.js)
-        run: cat index.js
+          # Allowed commit types
+          allowed_types: |
+              build
+              chore
+              ci
+              docs
+              feat
+              fix
+              perf
+              refactor
+              revert
+              style
+              test
+          # Regular expression to validate description
+          description_regexp: ([\w ]+)
+          # Make scope requires (boolean)
+          require_scope: "false"
+          # Regular expression to validate scope. Only used when require_scope is true or when scope is provided.
+          scope_regexp: (\w+)
