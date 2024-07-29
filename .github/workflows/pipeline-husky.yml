@@ -7,5 +7,6 @@ jobs:
   Validate:
     runs-on: ubuntu-latest
     steps:
-      - name: Validate PR title
-        uses: lab42/conventional-commit@main
+      - name: Conventional Commit
+        uses: lab42/conventional-commit@v0.2.2
+  
