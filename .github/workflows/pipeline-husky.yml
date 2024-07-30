@@ -17,6 +17,7 @@ jobs:
           allowed-commit-types: "feat,fix,chore,docs,style,refactor,perf,test,build,revert,security" # Optional, set if you want a subset of commit types to be allowed.
 
   linting:
+     name: Run linters
      needs: commit
      runs-on: ubuntu-latest
      steps:
@@ -31,12 +32,6 @@ jobs:
        # ESLint and Prettier must be in `package.json`
        - name: Install Node.js dependencies
          run: npm ci
-
-       - name: Run linters
-         uses: wearerequired/lint-action@v2
-         with:
-          eslint: true
-          prettier: true
 
        - name: Fix lint issues
          run: npx eslint '**.js' --fix
