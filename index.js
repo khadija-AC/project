@@ -9,10 +9,7 @@
       week: 'numeric',
       month: 'long',
       year: 'numeric',
-      khadija:"long",
-
-
-
+      khadija: 'long',
     }
 
     const now = new Date()
