@@ -14,7 +14,7 @@ jobs:
         uses: webiny/action-conventional-commits@v1.3.0
         with:
           
-          allowed-commit-types: "feat,fix" # Optional, set if you want a subset of commit types to be allowed.
+          allowed-commit-types: "feat,fix,chore,docs,style,refactor,perf,test,build,revert,security" # Optional, set if you want a subset of commit types to be allowed.
 
   linting:
      needs: commit
