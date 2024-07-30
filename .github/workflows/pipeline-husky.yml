@@ -38,6 +38,9 @@ jobs:
           eslint: true
           prettier: true
 
+       - name: Fix lint issues
+         run: npx eslint '**.js' --fix
+
        - name: Verification (cat index.js)
          run: cat index.js
 
