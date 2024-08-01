@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.6.0](https://github.com/khadija-AC/project/compare/v1.5.2...v1.6.0) (2024-08-01)
+
+
+### Features
+
+* test ([b850323](https://github.com/khadija-AC/project/commit/b850323119a8748b9420cb7814e8ed1c430cc6fe))
+
 ### [1.5.2](https://github.com/khadija-AC/project/compare/v1.5.1...v1.5.2) (2024-08-01)
 
 ### [1.5.1](https://github.com/khadija-AC/project/compare/v1.5.0...v1.5.1) (2024-08-01)
