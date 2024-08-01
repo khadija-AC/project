@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 1.7.2 (2024-08-01)
+
+
+### Bug Fixes
+
+* klfhkgsfi ([11c689b](https://github.com/khadija-AC/project/commit/11c689b4ce16e42fb3b2d069be895685b9f2a4d8))
+
 ### 1.7.1 (2024-08-01)
 
 
