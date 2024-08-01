@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 1.7.3 (2024-08-01)
+
+
+### Bug Fixes
+
+* **khjkg:** hkjkjg ([d065c1b](https://github.com/khadija-AC/project/commit/d065c1b7ced337f13cba309747747f896a208f2b))
+
 ### 1.7.2 (2024-08-01)
 
 
