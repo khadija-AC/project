@@ -2,6 +2,34 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 1.5.0 (2024-08-01)
+
+
+### Features
+
+* add action conventinel commit ([a2a5aab](https://github.com/khadija-AC/project/commit/a2a5aab7fc66409b2fcdac3d8268b7bfe26bd18a))
+* add action conventinel commit ([96b2566](https://github.com/khadija-AC/project/commit/96b2566215abe8f6d4de65090f4a63267c6fdda1))
+* add action conventinel commit ([4b21089](https://github.com/khadija-AC/project/commit/4b21089d6823ce5a33c8cd2ddb5ace106c884ab6))
+* add action conventinel commit ([b2f71c2](https://github.com/khadija-AC/project/commit/b2f71c2a1717537087b43e5a682b349c3128b2c3))
+* add action conventinel commit ([476aa0b](https://github.com/khadija-AC/project/commit/476aa0bbd51815d41a63d62bdef25aaa80e07b8f))
+* add action conventinel commit ([08e5056](https://github.com/khadija-AC/project/commit/08e50564e8f3968b10c9fb69ff12b8e868833850))
+* add linting function ([16f4a23](https://github.com/khadija-AC/project/commit/16f4a236a332d337436f8efa628dd5ca55f8fdfb))
+* add login functionality khadija ([0eaf88c](https://github.com/khadija-AC/project/commit/0eaf88c137750b504d4e4f9725b55d135245023f))
+* add login functionality khadija ([084eba9](https://github.com/khadija-AC/project/commit/084eba962c809975d83edf4dca669756bee82453))
+* add login functionality khadija ([ccdfc5b](https://github.com/khadija-AC/project/commit/ccdfc5bdc32d167783ffa90af926cc99a04b3daa))
+* add login functionality lamyae ([bc1ec99](https://github.com/khadija-AC/project/commit/bc1ec9996bf921fb0918877006e4583f0f0cae42))
+* add type of commit ([a2908fe](https://github.com/khadija-AC/project/commit/a2908fe02588ec2ba467a76f821214ffaf4b7566))
+* **hi:** every one ([38c65ab](https://github.com/khadija-AC/project/commit/38c65abe12e2434245c2c7586a6556207b5a0dff))
+
+
+### Bug Fixes
+
+* fix error ([51550dd](https://github.com/khadija-AC/project/commit/51550dd1351377192391d943685870a118f3ff5c))
+* fix linting issues ([81f70f4](https://github.com/khadija-AC/project/commit/81f70f49f08814aa6c885361c2879931cf62f05f))
+* resolve issue with commit ([0e5fcdd](https://github.com/khadija-AC/project/commit/0e5fcddea7287350ef1bbf8ee2dd574e27630af4))
+* resolve issue with data fetching ([982ac21](https://github.com/khadija-AC/project/commit/982ac2122d98972835d51c57b1d63a4e672cfaf9))
+* resolve issue with data fetching ([ecb5f1f](https://github.com/khadija-AC/project/commit/ecb5f1fb1f3681750e69439f852ead62091e4d75))
+
 ## [1.4.0](https://github.com/khadija-AC/husky-project/compare/v1.3.0...v1.4.0) (2024-07-22)
 
 ### Features
