@@ -39,3 +39,15 @@ jobs:
        - name: Verification (cat index.js)
          run: cat index.js
 
+  version: 
+    name: Gestion Versions
+    needs: linting
+    runs-on: ubuntu-latest
+    steps:
+      - name: add/commit/push
+        run: |
+         npm run release
+         git push --follow-tags origin main && npm publish
+
+
+
