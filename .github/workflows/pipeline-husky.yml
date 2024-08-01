@@ -52,6 +52,12 @@ jobs:
         with:
           node-version: 20
 
+      - name: identification
+        run: |
+         git config --global user.email "khadijaaws21@gmail.com"
+         git config --global user.name "khadija-AC"
+
+
       - name: add/commit/push
         run: npx standard-version
         
