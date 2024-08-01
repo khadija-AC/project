@@ -56,7 +56,7 @@ jobs:
         run: which standard-version
 
       - name: add/commit/push
-        run: npm run release
+        run: npx standard-version
         
       - name: iwa 
         run: npm git push --follow-tags origin main && npm publish
