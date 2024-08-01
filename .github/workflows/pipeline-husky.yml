@@ -58,7 +58,7 @@ jobs:
          git config --global user.name "khadija-AC"
 
 
-      - name: add/commit/push
+      - name: run standard-version
         run: npx standard-version
         
       - name: iwa 
