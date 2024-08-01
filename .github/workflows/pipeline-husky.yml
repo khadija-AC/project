@@ -48,9 +48,10 @@ jobs:
         uses: actions/checkout@v4
 
       - name: add/commit/push
-        run: |
-         npm run release
-         npm git push --follow-tags origin main && npm publish
+        run: npm run release
+        
+      - name: iwa 
+        run: npm git push --follow-tags origin main && npm publish
          
 
 
