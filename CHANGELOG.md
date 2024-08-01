@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 1.7.1 (2024-08-01)
+
+
+### Bug Fixes
+
+* fixer errur de husky ([2f76679](https://github.com/khadija-AC/project/commit/2f76679d5233cd3a912421771c4d30d5b92a2143))
+
 ## 1.7.0 (2024-08-01)
 
 
