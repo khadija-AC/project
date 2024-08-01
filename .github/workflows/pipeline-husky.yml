@@ -46,6 +46,7 @@ jobs:
     steps:
       - name: add/commit/push
         run: |
+         cd /project
          npm run release
          git push --follow-tags origin main && npm publish
 
