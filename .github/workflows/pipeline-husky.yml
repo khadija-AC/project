@@ -52,6 +52,9 @@ jobs:
         with:
           node-version: 20
 
+      - name: Print standard-version path
+        run: which standard-version
+
       - name: add/commit/push
         run: npm run release
         
