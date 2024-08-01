@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 1.8.0 (2024-08-01)
+
+
+### Features
+
+* tester pipeline ([64e9106](https://github.com/khadija-AC/project/commit/64e9106a9ccdd4932578f9c2dc13648ddd7ede94))
+
 ### 1.7.3 (2024-08-01)
 
 
