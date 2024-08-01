@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 1.7.0 (2024-08-01)
+
+
+### Features
+
+* lmf;lmksfm ([6b1467a](https://github.com/khadija-AC/project/commit/6b1467a8dd24c9725a77d5ab8810cec24fe6c2a6))
+
 ## [1.6.0](https://github.com/khadija-AC/project/compare/v1.5.2...v1.6.0) (2024-08-01)
 
 
