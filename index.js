@@ -10,7 +10,6 @@
       month: 'long',
       year: 'numeric',
       khadija: 'long',
-      jiji: 'long',
     }
 
     const now = new Date()
