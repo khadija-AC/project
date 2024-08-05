@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 1.10.1 (2024-08-05)
+
+
+### Bug Fixes
+
+* fix erreur ([8d0c164](https://github.com/khadija-AC/project/commit/8d0c16464e47309d0bd029fa47addf3ef3253894))
+
 ## 1.10.0 (2024-08-05)
 
 
