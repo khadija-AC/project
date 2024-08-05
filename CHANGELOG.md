@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.12.2](https://github.com/khadija-AC/project/compare/v1.12.1...v1.12.2) (2024-08-05)
+
+
+### Bug Fixes
+
+* hi ([1efd1a4](https://github.com/khadija-AC/project/commit/1efd1a4a2edccbb70cf590b8fa43fa0daf96f8f6))
+* jk ([f6b2e73](https://github.com/khadija-AC/project/commit/f6b2e73e722d6687fd263578e069df687f814e9b))
+
 ### 1.12.1 (2024-08-05)
 
 ## 1.12.0 (2024-08-05)
