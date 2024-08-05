@@ -9,6 +9,7 @@
       week: 'numeric',
       month: 'long',
       year: 'numeric',
+      khadija: 'long',
     }
     // hi
 
