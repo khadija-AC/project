@@ -17,13 +17,20 @@ jobs:
           with:
            script: |
              const { github, context } = require('@actions/github');
-             await github.rest.actions.createWorkflowDispatch({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              workflow_id: 'linting.yml',
-              ref: context.ref,
+            
+             async function triggerWorkflow() {
+              await github.rest.actions.createWorkflowDispatch({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                workflow_id: 'linting.yml',
+                ref: context.ref,
+              });
+             }
+            
+             triggerWorkflow().catch(error => {
+              console.error(error);
+              process.exit(1);
              });
-           
         
         - name: Check out Git repository
           uses: actions/checkout@v3
