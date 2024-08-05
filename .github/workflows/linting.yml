@@ -8,6 +8,17 @@ on:
   
 
 jobs:
+  commit:
+        name: Conventional Commits
+        runs-on: ubuntu-latest
+        steps:
+          - name: Check out Git repository
+            uses: actions/checkout@v3
+    
+          - name: Conventional Commits
+            uses: webiny/action-conventional-commits@v1.3.0
+            with:
+              allowed-commit-types: "feat,fix,chore,docs,style,refactor,perf,test,build,revert,security"
 
   linting:
     name: Run linters

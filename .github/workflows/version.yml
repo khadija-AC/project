@@ -4,21 +4,12 @@ on:
 
 jobs:
 
-    commit:
-        name: Conventional Commits
-        runs-on: ubuntu-latest
-        steps:
-          - name: Check out Git repository
-            uses: actions/checkout@v3
-    
-          - name: Conventional Commits
-            uses: webiny/action-conventional-commits@v1.3.0
-            with:
-              allowed-commit-types: "feat,fix,chore,docs,style,refactor,perf,test,build,revert,security"
+    call-workflow:
+        uses: ./.github/workflows/linting.yml
 
     version:
        name: Gestion Versions
-       needs: commit
+       needs: call-workflow
        runs-on: ubuntu-latest
        steps:
 
