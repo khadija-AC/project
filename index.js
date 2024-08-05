@@ -10,7 +10,7 @@
       month: 'long',
       year: 'numeric',
     }
-
+    // khdem pliz
     const now = new Date()
     const formattedDate = now.toLocaleDateString('en-US', options)
     return `Hello, ${name}! Today is ${formattedDate}.`
