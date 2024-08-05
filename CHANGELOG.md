@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 1.10.0 (2024-08-05)
+
+
+### Features
+
+* seapare ([faf8721](https://github.com/khadija-AC/project/commit/faf8721d8cebe878fb1b2c5ab381ff4e46bddd76))
+
 ## 1.9.0 (2024-08-01)
 
 
