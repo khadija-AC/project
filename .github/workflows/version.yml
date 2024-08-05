@@ -1,43 +1,29 @@
 name: version
 on:
-    push:
-      branches:
-        - main
-    workflow_dispatch:
-
+    push
 
 jobs:
-     version:
+
+    commit:
+        name: Conventional Commits
+        runs-on: ubuntu-latest
+        steps:
+          - name: Check out Git repository
+            uses: actions/checkout@v3
+    
+          - name: Conventional Commits
+            uses: webiny/action-conventional-commits@v1.3.0
+            with:
+              allowed-commit-types: "feat,fix,chore,docs,style,refactor,perf,test,build,revert,security"
+
+    version:
        name: Gestion Versions
+       needs: commit
        runs-on: ubuntu-latest
        steps:
 
-        - name: Trigger linting workflow
-          uses: actions/github-script@v6
-          with:
-           script: |
-             const { github, context } = require('@actions/github');
-            
-             async function triggerWorkflow() {
-              await github.rest.actions.createWorkflowDispatch({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                workflow_id: 'linting.yml',
-                ref: context.ref,
-              });
-             }
-            
-             triggerWorkflow().catch(error => {
-              console.error(error);
-              process.exit(1);
-             });
-        
         - name: Check out Git repository
           uses: actions/checkout@v3
-
-        - name: workflows
-          run: cat ./.github/workflows/linting.yml 
-          
 
         - name: Set up Node.js
           uses: actions/setup-node@v1
