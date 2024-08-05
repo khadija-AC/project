@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 1.13.0 (2024-08-05)
+
+
+### Features
+
+* **jhkh:** jbkjb ([0e9d947](https://github.com/khadija-AC/project/commit/0e9d947aa317bfbe0bb08ee46f223ad3ce26859b))
+
 ### [1.12.2](https://github.com/khadija-AC/project/compare/v1.12.1...v1.12.2) (2024-08-05)
 
 
