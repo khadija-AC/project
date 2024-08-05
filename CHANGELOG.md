@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 1.9.0 (2024-08-01)
+
+
+### Features
+
+* erreur ([8f53341](https://github.com/khadija-AC/project/commit/8f53341333dc11addecd744d2f887a0149e668e6))
+
 ## 1.8.0 (2024-08-01)
 
 
