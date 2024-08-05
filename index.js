@@ -11,7 +11,6 @@
       year: 'numeric',
       khadija: 'long',
     }
-    // hi
 
     const now = new Date()
     const formattedDate = now.toLocaleDateString('en-US', options)
