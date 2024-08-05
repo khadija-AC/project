@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 1.17.0 (2024-08-05)
+
+
+### Features
+
+* pull request confirm ([d093678](https://github.com/khadija-AC/project/commit/d093678dc93eb240d0cfc6a7e201e781ef5dc63d))
+
 ### 1.16.1 (2024-08-05)
 
 ## 1.16.0 (2024-08-05)
