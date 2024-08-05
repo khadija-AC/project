@@ -1,17 +1,12 @@
 name: Conventional Commits
 
-on:
-  pull_request:
-    types: [opened, synchronize]
-  push:
-    branches:
-      - main
+on: [workflow_call, pull_request]
+  
 
 jobs:
   commit:
     name: Conventional Commits
     runs-on: ubuntu-latest
-    if: github.event_name == 'pull_request'
     steps:
       - name: Check out Git repository
         uses: actions/checkout@v3
@@ -25,7 +20,6 @@ jobs:
     name: Run linters
     needs: commit
     runs-on: ubuntu-latest
-    if: github.event_name == 'pull_request'
     steps:
       - name: Check out Git repository
         uses: actions/checkout@v4
@@ -45,28 +39,4 @@ jobs:
       - name: Verification (cat index.js)
         run: cat index.js
 
-  version:
-    name: Gestion Versions
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check out Git repository
-        uses: actions/checkout@v4
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v1
-        with:
-          node-version: 20
-     
-      - name: Fetch all history for all tags and branches
-        run: git fetch --prune --unshallow
-        
-      - name: identification
-        run: |
-          git config --global user.email "khadijaaws21@gmail.com"
-          git config --global user.name "khadija-AC"
-
-      - name: execute standard-version
-        run: npx standard-version
-
-      - name: push changes
-        run: git push --follow-tags origin main && npm publish
+ 
