@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 1.16.0 (2024-08-05)
+
+
+### Features
+
+* **ad:** sad ([b6726bf](https://github.com/khadija-AC/project/commit/b6726bf95a694a90e94563eb052fb78068724391))
+
 ### 1.15.1 (2024-08-05)
 
 ## 1.15.0 (2024-08-05)
