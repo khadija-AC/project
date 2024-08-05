@@ -1,15 +1,13 @@
 name: version
 on:
-    push
+    push:
+     branches:
+      - main
 
 jobs:
 
-    call-workflow:
-        uses: ./.github/workflows/linting.yml
-
     version:
        name: Gestion Versions
-       needs: call-workflow
        runs-on: ubuntu-latest
        steps:
 
@@ -30,4 +28,4 @@ jobs:
           run: npx standard-version
 
         - name: push changes
-          run: git push --follow-tags origin main && npm publish
+          run: git push --follow-tags origin main 
