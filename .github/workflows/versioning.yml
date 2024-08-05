@@ -26,9 +26,7 @@ jobs:
       - name: execute standard-version
         run: npx standard-version
         
-      - name: publish
+      - name: Publish package
         run: git push --follow-tags origin main 
 
-      - name: Publish package
-        run: npm publish
-         
+      
