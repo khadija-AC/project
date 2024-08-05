@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 1.17.1 (2024-08-05)
+
+
+### Bug Fixes
+
+* **sdhlk:** ajoooute ([65eda44](https://github.com/khadija-AC/project/commit/65eda448687b2d51aee75b743f9c628c90e9e5bc))
+
 ## 1.17.0 (2024-08-05)
 
 
