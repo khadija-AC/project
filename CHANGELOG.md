@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 1.11.0 (2024-08-05)
+
+
+### Features
+
+* **hi:** ever ([1fb2c41](https://github.com/khadija-AC/project/commit/1fb2c417cc644c59c4cd76213834fce41322c02f))
+
 ### 1.10.2 (2024-08-05)
 
 ### 1.10.1 (2024-08-05)

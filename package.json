@@ -1,6 +1,6 @@
 {
   "name": "test-husky-project",
-  "version": "1.10.2",
+  "version": "1.11.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Running tests...\" && exit 0",
