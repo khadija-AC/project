@@ -57,7 +57,10 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 20
-
+     
+      - name: Fetch all history for all tags and branches
+        run: git fetch --prune --unshallow
+        
       - name: identification
         run: |
           git config --global user.email "khadijaaws21@gmail.com"
