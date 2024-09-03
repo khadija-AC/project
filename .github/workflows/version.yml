@@ -6,7 +6,7 @@ on:
 
 jobs:
 
-    version-test:
+    version:
        name: Gestion Version
        runs-on: self-hosted
        steps:
